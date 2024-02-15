@@ -67,6 +67,29 @@
 ![Tabla turnoPaciente](/SQL/myproject/img/tablaTurnoPaciente.png)
 
 # Data Types
- 
+ Se refiere al formato del valor que puede almacenarse en un campo de la tabla. Los tipos de datos en SQL se definen las caracteristicas y las restricciones de los valores que pueden almacenarse en el mismo, como el rango de valores permitidos, el tamaño o el formato
 
+ ### Numerics
+ - *BIT:* Este puede contener el valor de 0 o 1 ó true o false
+ - *TINYINT:* Este puede contener del 0 a 255
+ - *INT:* Este puede almacenar desde -2,147,483,648 HASTA 2,147,483,647
+ - *MONEY:* Este almacena desde  -922,337,203,685,477.5808 HASTA 922,337,203,685,477.5807
+ - *DECIMAL (10,2):* DECIMAL (10,2) Precisión y Escala
+                    1 a 9: 5 bytes
+                    10 a 19: 9 bytes
+                    20 a 28: 13 bytes
+                    29 a 38: 17 bytes
 
+ ### Strings
+ - *CHAR:* Este almacena por caracter desde 1 a 8000
+ - *VARCHAR:* Este almacena desde 1 a 8000
+
+ ### Date and hour
+ - *DATETIME:* YYYY-MM-DD hh:mm:ss:nnn
+               01/01/1753 HASTA 31/12/9999
+               00:00:00 HASTA 23:59:59.997
+
+# What are files MDF and LDF
+
+ - *Archivo MDF (Master Data File)* El archivo MDF es el principal archivo de datos de una base de datos en SQL SERVER, contiene las tablas, procesamientos almacenados y otros objetos de la base de datos
+ - *Archivo LDF (Log Data File)* El archivo LDF es el archivo de registro de transacciones de una base de datos en SQL SERVER, registra todas las transacciones y cambios realizados en la base de datos, lo que permite la recuperacion y restauracion de la misma en caso de fallos o perdida de datos.
